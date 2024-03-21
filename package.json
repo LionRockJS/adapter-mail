@@ -1,0 +1,45 @@
+{
+  "type": "module",
+  "name": "@lionrock/adapter-mail-aws",
+  "version": "0.0.1",
+  "description": "LionRockJS Mail Module Adpater - AWS",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules ../../../node_modules/jest/bin/jest.js --coverage"
+  },
+  "jest": {
+    "verbose": true,
+    "transform": {},
+    "testMatch": [
+      "**/__tests__/**/*.[jt]s?(x)",
+      "**/?(*.)+(spec|test).[jt]s?(x)",
+      "**/?(*.)+(spec|test).mjs"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "mjs"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LionRockJS/adapter-mail.git"
+  },
+  "keywords": [
+    "LionRockJS",
+    "AWS",
+    "SES"
+  ],
+  "author": "Kojin Nakana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/LionRockJS/adapter-mail/issues"
+  },
+  "homepage": "https://gitlab.com/LionRockJS/adapter-mail#readme",
+  "dependencies": {
+    "@aws-sdk/client-ses": "^3.290.0",
+    "@aws-sdk/credential-provider-ini": "^3.290.0",
+    "@aws-sdk/client-dynamodb": "^3.290.0",
+    "nodemailer": "^6.9.1"
+  }
+}

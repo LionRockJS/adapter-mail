@@ -5,7 +5,7 @@ export default {
   dirname
 }
 
-import MailAdapterTwilio from './classes/mail-adapter/Twilio';
+import MailAdapterTwilio from './classes/mail-adapter/Twilio.mjs';
 export {
   MailAdapterTwilio
 };

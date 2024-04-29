@@ -62,6 +62,6 @@ export default class MailAdapterTwilio extends MailAdapter {
 
   // eslint-disable-next-line class-methods-use-this
   async readLog(email) {
-    console.log('TODO: implement Twilio read log');
+    Central.log('TODO: implement Twilio read log');
   }
 }

@@ -1,7 +1,7 @@
 import path from 'node:path';
 import { Central } from '@lionrockjs/central';
 import { MailAdapter } from '@lionrockjs/mod-mail';
-import MailComposer from 'nodemailer/lib/mail-composer';
+import MailComposer from 'nodemailer/lib/mail-composer/index.js';
 import { SES } from '@aws-sdk/client-ses';
 import { fromIni } from '@aws-sdk/credential-provider-ini';
 import { DynamoDBClient, ScanCommand } from '@aws-sdk/client-dynamodb';

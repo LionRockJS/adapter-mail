@@ -1,4 +1,4 @@
-import {Central, ORM} from '@lionrockjs/central';
+import {Central, Model} from '@lionrockjs/central';
 import {MailAdapter} from '@lionrockjs/mod-mail';
 import Twilio from 'twilio';
 
@@ -44,7 +44,7 @@ export default class MailAdapterTwilio extends MailAdapter {
     const results = await Promise.all(
       recipients.map(
         async it => {
-          const MessageId = ORM.defaultAdapter.defaultID();
+          const MessageId = Model.defaultAdapter.defaultID();
           const options = { to: it, from: sender, body: subject + text };
           if (Central.config.mail.twilio.statusCallbackUrl) {
             options.statusCallback = `${Central.config.mail.twilio.statusCallbackUrl}?message_id=${MessageId}`;

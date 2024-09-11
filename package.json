@@ -1,8 +1,8 @@
 {
   "type": "module",
   "name": "@lionrockjs/adapter-mail-twilio",
-  "version": "0.0.1",
-  "description": "LionRockJS Mail Module Adpater - Twilio",
+  "version": "0.0.2",
+  "description": "LionRockJS Mail Module Adapter - Twilio",
   "main": "index.js",
   "scripts": {
     "test": "node --experimental-vm-modules ../../../node_modules/jest/bin/jest.js --coverage"

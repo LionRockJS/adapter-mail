@@ -3,8 +3,6 @@ import {MailAdapter} from '@lionrockjs/mod-mail';
 import Twilio from 'twilio';
 
 export default class MailAdapterTwilio extends MailAdapter {
-  static SID = Central.adapter.process().env.TWILIO_SID;
-  static TOKEN = Central.adapter.process().env.TWILIO_TOKEN;
   /**
    *
    * @param opts
@@ -16,8 +14,8 @@ export default class MailAdapterTwilio extends MailAdapter {
     super();
     this.service = 'Twilio';
     this.client = Twilio(
-      MailAdapterTwilio.SID,
-      MailAdapterTwilio.TOKEN
+      Central.adapter.process().env.TWILIO_SID,
+      Central.adapter.process().env.TWILIO_TOKEN
     );
   }
   /**

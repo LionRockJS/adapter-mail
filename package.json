@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@lionrockjs/adapter-mail-aws",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "LionRockJS Mail Module Adpater - AWS",
   "main": "index.js",
   "scripts": {

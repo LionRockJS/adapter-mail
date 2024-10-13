@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@lionrockjs/adapter-mail-twilio",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "LionRockJS Mail Module Adapter - Twilio",
   "main": "index.js",
   "scripts": {

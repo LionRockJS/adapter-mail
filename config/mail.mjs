@@ -1,9 +1,7 @@
-import url from "node:url";
-const __dirname = url.fileURLToPath(new URL('.', import.meta.url)).replace(/\/$/, '');
-
+import {Central} from '@lionrockjs/central';
 export default {
   aws: {
-    credentialsPath: `${__dirname}/credentials`,
+    credentialsPath: `${Central.APP_PATH}/config/credentials`,
     profile: 'default',
     region: 'ap-southeast-1',
     configurationSetName: 'default',

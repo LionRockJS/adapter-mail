@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@lionrockjs/adapter-mail-aws",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "LionRockJS Mail Module Adpater - AWS",
   "main": "index.js",
   "scripts": {
@@ -37,9 +37,9 @@
   },
   "homepage": "https://gitlab.com/LionRockJS/adapter-mail#readme",
   "dependencies": {
-    "@aws-sdk/client-ses": "^3.535.0",
-    "@aws-sdk/credential-provider-ini": "^3.535.0",
-    "@aws-sdk/client-dynamodb": "^3.538.0",
-    "nodemailer": "^6.9.13"
+    "@aws-sdk/client-ses": "^3.677.0",
+    "@aws-sdk/credential-provider-ini": "^3.677.0",
+    "@aws-sdk/client-dynamodb": "^3.677.0",
+    "nodemailer": "^6.9.15"
   }
 }

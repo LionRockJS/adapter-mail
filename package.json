@@ -36,6 +36,6 @@
   },
   "homepage": "https://gitlab.com/LionRockJS/adapter-mail#readme",
   "dependencies": {
-    "twilio": "^5.0.1"
+    "twilio": "^5.4.3"
   }
 }

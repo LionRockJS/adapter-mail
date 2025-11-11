@@ -43,6 +43,7 @@ export default class MailAdapterAWSSES extends MailAdapter {
    * @param {string} opts.html
    * @param {object[]} opts.attachments ['filename', 'data-path']
    * @param {string[]} opts.metadata ['user', '12345']
+   * @param {string} opts.reply_to
    * @returns {Promise<unknown>}
    */
 
@@ -60,6 +61,7 @@ export default class MailAdapterAWSSES extends MailAdapter {
       project = Central.config.mail.aws.project,
       dynamoDB = Central.config.mail.aws.dynamoDB,
       configurationSetName = Central.config.mail.aws.configurationSetName,
+      reply_to=''
     } = opts;
 
     const mail = {
@@ -73,6 +75,7 @@ export default class MailAdapterAWSSES extends MailAdapter {
     if (bcc) mail.bcc = bcc;
     if (html) mail.html = html
     if(attachments.length > 0) mail.attachments = attachments;
+    if(reply_to)mail.replyTo = reply_to;
 
     const Data = await new Promise((resolve, reject) => {
       const mc = new MailComposer(mail).compile();

@@ -3,23 +3,11 @@
   "name": "@lionrockjs/adapter-mail-aws",
   "version": "0.0.6",
   "description": "LionRockJS Mail Module Adpater - AWS",
-  "main": "index.js",
+  "main": "classes/index.js",
+  "types": "types/index.d.ts",
   "scripts": {
-    "test": "node --experimental-vm-modules ../../../node_modules/jest/bin/jest.js --coverage"
-  },
-  "jest": {
-    "verbose": true,
-    "transform": {},
-    "testMatch": [
-      "**/__tests__/**/*.[jt]s?(x)",
-      "**/?(*.)+(spec|test).[jt]s?(x)",
-      "**/?(*.)+(spec|test).mjs"
-    ],
-    "moduleFileExtensions": [
-      "js",
-      "jsx",
-      "mjs"
-    ]
+    "build": "tsc",
+    "watch": "tsc -w"
   },
   "repository": {
     "type": "git",
@@ -41,5 +29,9 @@
     "@aws-sdk/credential-provider-ini": "^3.911.0",
     "@aws-sdk/client-dynamodb": "^3.911.0",
     "nodemailer": "^7.0.9"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/node": "^20.10.5"
   }
 }

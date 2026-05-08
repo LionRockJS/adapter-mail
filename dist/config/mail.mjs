@@ -1,0 +1,5 @@
+export default {
+    twilio: {
+        statusCallbackUrl: '',
+    },
+};
